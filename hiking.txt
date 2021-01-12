@@ -1,0 +1,30 @@
+HikingClothing
+
+attributes:
+material (array)
+size (string)
+seasonAppropriate (boolean)
+numButtons (integer)
+isOutermostLayer (boolean)
+
+methods:
+takeOffLayer (changes isOutermostLayer )
+loseButton (updates numButtons integer -1)
+isSummer (updates seasonAppropriate)
+addPatch (add material to array)
+
+
+flannelShirt
+
+attributes:
+material = ["cotton"];
+size = "medium";
+seasonAppropriate = true;
+numButtons = 8;
+isOutermostLayer = true;
+
+methods:
+takeOffLayer (updates isOutermostLayer to false)
+loseButton (updates numButtons integer -1 to 7)
+isSummer (updates seasonAppropriate to false)
+addPatch (add "polyester" material to array)
